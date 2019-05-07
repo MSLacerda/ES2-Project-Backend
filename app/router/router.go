@@ -1,4 +1,4 @@
-package main
+package router
 
 import (
 	"github.com/MSLacerda/ES2-Project-Backend/handle"
@@ -14,7 +14,7 @@ func GetRouter() *mux.Router {
 
 	public.HandleFunc("/api/estorias", handle.ListarEstorias).Methods("GET")
 	public.HandleFunc("/api/estorias/{id:[0-9]+}", handle.BuscarEstoria).Methods("GET")
-	public.HandleFunc("/api/estorias/{id:[0-9]+}", handle.ConferirEstoria).Methods("GET")
+	public.HandleFunc("/api/estorias/{id:[0-9]+}", handle.ConferirEstoria).Methods("PUT")
 
 	return public
 }

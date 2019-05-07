@@ -4,7 +4,9 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/MSLacerda/ES2-Project-Backend/data"
+	"github.com/MSLacerda/ES2-Project-Backend/model"
 	"github.com/gorilla/mux"
+	"math/rand"
 	"reflect"
 	"strconv"
 
@@ -13,6 +15,7 @@ import (
 )
 
 func ListarEstorias (w http.ResponseWriter, r *http.Request) {
+	log.Printf("1")
 	estorias, err := data.ListarEstorias()
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
@@ -31,14 +34,45 @@ func BuscarEstoria (w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusInternalServerError)
 	}
 
-	err = JSON(w, 200, estoria)
+	// Para deixar ordem aleatória
+	respEstoria := make([]model.Estoria, len(estoria))
+	ordem := rand.Perm(len(estoria))
+
+	for i, e := range ordem {
+		respEstoria[i] = estoria[e]
+	}
+
+	err = JSON(w, 200, respEstoria)
 	if err != nil {
 		log.Println(err)
 	}
 }
 
 func ConferirEstoria (w http.ResponseWriter, r *http.Request) {
-	log.Printf("todo")
+	id, err := strconv.ParseInt(mux.Vars(r)["id"], 10, 64)
+
+	type respEstoria struct {
+		Estorias []model.Estoria `json:"estorias"`
+	}
+
+	dados := respEstoria{}
+
+	err = json.NewDecoder(r.Body).Decode(&dados.Estorias)
+	if err != nil {
+		log.Println(err)
+		w.WriteHeader(http.StatusInternalServerError)
+		return
+	}
+
+	resp := data.ConferirEstoria(dados.Estorias, id)
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+	}
+
+	err = JSON(w, 200, resp)
+	if err != nil {
+		log.Println(err)
+	}
 }
 
 // Auxiliares
