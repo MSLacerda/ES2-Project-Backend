@@ -84,7 +84,9 @@ Resposta
 
 ### Estorias de usuário
 
-- Listar estorias de usuário (por partes)
+- Buscar estoria de usuário
+
+Lista todas as partes que vão compor uma estória de usuário (já embaralhadas)
 
 ```http
 /api/estorias
@@ -92,13 +94,50 @@ Resposta
 Resposta
 ```json
 {
-  "data": [
+  [
     {
-      "id": 1,
-      "grupo": 1,
-      "codigo_entidade": "Q",
-      "conteúdo": "quero poder executar obter ajuda"
+      "estoria": 1,
+      "p_estoria": 15,
+      "conteudo": "da"
+    },
+    {
+      "estoria": 1,
+      "p_estoria": 16,
+      "conteudo": "instruções"
     }
   ]
+}
+```
+
+- Conferir estoria de usuário
+
+Confere uma estória de usuário. Para isso recebe uma lista das palavras da estoria e compara se a ordem das mesmas é a esperada. Também se espera o ```ìd``` da estoria na URL.
+
+```http
+/api/estorias/{estoria_id}
+```
+
+Esperado
+```json
+{
+  [
+    {
+      "estoria": 1,
+      "p_estoria": 15,
+      "conteudo": "da"
+    },
+    {
+      "estoria": 1,
+      "p_estoria": 16,
+      "conteudo": "instruções"
+    }
+  ]
+}
+```
+
+Resposta
+```json
+{
+  "correto": true
 }
 ```
