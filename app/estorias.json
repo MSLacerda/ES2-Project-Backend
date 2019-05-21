@@ -164,6 +164,386 @@
       "estoria": 2,
       "p_estoria": 33,
       "conteudo": "mesmo"
+    },
+    {
+      "estoria": 3,
+      "p_estoria": 34,
+      "conteudo": "como"
+    },
+    {
+      "estoria": 3,
+      "p_estoria": 35,
+      "conteudo": "um"
+    },
+    {
+      "estoria": 3,
+      "p_estoria": 36,
+      "conteudo": "usuário"
+    },
+    {
+      "estoria": 3,
+      "p_estoria": 37,
+      "conteudo": "eu"
+    },
+    {
+      "estoria": 3,
+      "p_estoria": 38,
+      "conteudo": "quero"
+    },
+    {
+      "estoria": 3,
+      "p_estoria": 39,
+      "conteudo": "salvar"
+    },
+    {
+      "estoria": 3,
+      "p_estoria": 40,
+      "conteudo": "um"
+    },
+    {
+      "estoria": 3,
+      "p_estoria": 41,
+      "conteudo": "documento"
+    },
+    {
+      "estoria": 3,
+      "p_estoria": 42,
+      "conteudo": "de"
+    },
+    {
+      "estoria": 3,
+      "p_estoria": 43,
+      "conteudo": "modo"
+    },
+    {
+      "estoria": 3,
+      "p_estoria": 44,
+      "conteudo": "que"
+    },
+    {
+      "estoria": 3,
+      "p_estoria": 45,
+      "conteudo": "minhas"
+    },
+    {
+      "estoria": 3,
+      "p_estoria": 46,
+      "conteudo": "alterações"
+    },
+    {
+      "estoria": 3,
+      "p_estoria": 47,
+      "conteudo": "permaneçam"
+    },
+    {
+      "estoria": 3,
+      "p_estoria": 48,
+      "conteudo": "nele"
+    },
+    {
+      "estoria": 4,
+      "p_estoria": 49,
+      "conteudo": "como"
+    },
+    {
+      "estoria": 4,
+      "p_estoria": 50,
+      "conteudo": "um"
+    },
+    {
+      "estoria": 4,
+      "p_estoria": 51,
+      "conteudo": "usuário"
+    },
+    {
+      "estoria": 4,
+      "p_estoria": 52,
+      "conteudo": "eu"
+    },
+    {
+      "estoria": 4,
+      "p_estoria": 53,
+      "conteudo": "quero"
+    },
+    {
+      "estoria": 4,
+      "p_estoria": 54,
+      "conteudo": "requisitar"
+    },
+    {
+      "estoria": 4,
+      "p_estoria": 55,
+      "conteudo": "ajuda"
+    },
+    {
+      "estoria": 4,
+      "p_estoria": 56,
+      "conteudo": "de"
+    },
+    {
+      "estoria": 4,
+      "p_estoria": 57,
+      "conteudo": "modo"
+    },
+    {
+      "estoria": 4,
+      "p_estoria": 58,
+      "conteudo": "que"
+    },
+    {
+      "estoria": 4,
+      "p_estoria": 59,
+      "conteudo": "o"
+    },
+    {
+      "estoria": 4,
+      "p_estoria": 60,
+      "conteudo": "sistema"
+    },
+    {
+      "estoria": 4,
+      "p_estoria": 61,
+      "conteudo": "possa"
+    },
+    {
+      "estoria": 4,
+      "p_estoria": 62,
+      "conteudo": "me"
+    },
+    {
+      "estoria": 4,
+      "p_estoria": 63,
+      "conteudo": "orientar"
+    },
+    {
+      "estoria": 4,
+      "p_estoria": 64,
+      "conteudo": "quanto"
+    },
+    {
+      "estoria": 4,
+      "p_estoria": 65,
+      "conteudo": "ao"
+    },
+    {
+      "estoria": 4,
+      "p_estoria": 66,
+      "conteudo": "uso"
+    },
+    {
+      "estoria": 4,
+      "p_estoria": 67,
+      "conteudo": "do"
+    },
+    {
+      "estoria": 4,
+      "p_estoria": 68,
+      "conteudo": "mesmo"
+    },
+    {
+      "estoria": 5,
+      "p_estoria": 69,
+      "conteudo": "como"
+    },
+    {
+      "estoria": 5,
+      "p_estoria": 70,
+      "conteudo": "um"
+    },
+    {
+      "estoria": 5,
+      "p_estoria": 71,
+      "conteudo": "usuário"
+    },
+    {
+      "estoria": 5,
+      "p_estoria": 72,
+      "conteudo": "eu"
+    },
+    {
+      "estoria": 5,
+      "p_estoria": 73,
+      "conteudo": "quero"
+    },
+    {
+      "estoria": 5,
+      "p_estoria": 74,
+      "conteudo": "que"
+    },
+    {
+      "estoria": 5,
+      "p_estoria": 75,
+      "conteudo": "o"
+    },
+    {
+      "estoria": 5,
+      "p_estoria": 76,
+      "conteudo": "processador"
+    },
+    {
+      "estoria": 5,
+      "p_estoria": 77,
+      "conteudo": "execute"
+    },
+    {
+      "estoria": 5,
+      "p_estoria": 78,
+      "conteudo": "instruções"
+    },
+    {
+      "estoria": 5,
+      "p_estoria": 79,
+      "conteudo": "de"
+    },
+    {
+      "estoria": 5,
+      "p_estoria": 80,
+      "conteudo": "modo"
+    },
+    {
+      "estoria": 5,
+      "p_estoria": 81,
+      "conteudo": "que"
+    },
+    {
+      "estoria": 5,
+      "p_estoria": 82,
+      "conteudo": "eu"
+    },
+    {
+      "estoria": 5,
+      "p_estoria": 83,
+      "conteudo": "possa"
+    },
+    {
+      "estoria": 5,
+      "p_estoria": 84,
+      "conteudo": "obter"
+    },
+    {
+      "estoria": 5,
+      "p_estoria": 85,
+      "conteudo": "o"
+    },
+    {
+      "estoria": 5,
+      "p_estoria": 86,
+      "conteudo": "resultado"
+    },
+    {
+      "estoria": 5,
+      "p_estoria": 87,
+      "conteudo": "requerido"
+    },
+    {
+      "estoria": 6,
+      "p_estoria": 88,
+      "conteudo": "como"
+    },
+    {
+      "estoria": 6,
+      "p_estoria": 89,
+      "conteudo": "um"
+    },
+    {
+      "estoria": 6,
+      "p_estoria": 91,
+      "conteudo": "usuário"
+    },
+    {
+      "estoria": 6,
+      "p_estoria": 92,
+      "conteudo": "eu"
+    },
+    {
+      "estoria": 6,
+      "p_estoria": 93,
+      "conteudo": "quero"
+    },
+    {
+      "estoria": 6,
+      "p_estoria": 94,
+      "conteudo": "que"
+    },
+    {
+      "estoria": 6,
+      "p_estoria": 95,
+      "conteudo": "o"
+    },
+    {
+      "estoria": 6,
+      "p_estoria": 96,
+      "conteudo": "processador"
+    },
+    {
+      "estoria": 6,
+      "p_estoria": 97,
+      "conteudo": "atualize"
+    },
+    {
+      "estoria": 6,
+      "p_estoria": 98,
+      "conteudo": "o"
+    },
+    {
+      "estoria": 6,
+      "p_estoria": 99,
+      "conteudo": "contador"
+    },
+    {
+      "estoria": 6,
+      "p_estoria": 100,
+      "conteudo": "de"
+    },
+    {
+      "estoria": 6,
+      "p_estoria": 101,
+      "conteudo": "instruções"
+    },
+    {
+      "estoria": 6,
+      "p_estoria": 102,
+      "conteudo": "de"
+    },
+    {
+      "estoria": 6,
+      "p_estoria": 103,
+      "conteudo": "modo"
+    },
+    {
+      "estoria": 6,
+      "p_estoria": 104,
+      "conteudo": "que"
+    },
+    {
+      "estoria": 6,
+      "p_estoria": 105,
+      "conteudo": "a"
+    },
+    {
+      "estoria": 6,
+      "p_estoria": 106,
+      "conteudo": "próxima"
+    },
+    {
+      "estoria": 6,
+      "p_estoria": 107,
+      "conteudo": "instrução"
+    },
+    {
+      "estoria": 6,
+      "p_estoria": 108,
+      "conteudo": "possa"
+    },
+    {
+      "estoria": 6,
+      "p_estoria": 109,
+      "conteudo": "ser"
+    },
+    {
+      "estoria": 6,
+      "p_estoria": 110,
+      "conteudo": "executada"
     }
   ]
 }
