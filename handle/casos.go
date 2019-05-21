@@ -1,12 +1,13 @@
 package handle
 
 import (
-	"github.com/MSLacerda/ES2-Project-Backend/data"
 	"log"
 	"net/http"
+
+	"github.com/MSLacerda/ES2-Project-Backend/data"
 )
 
-func BuscarCaso (w http.ResponseWriter, r *http.Request) {
+func BuscarCaso(w http.ResponseWriter, r *http.Request) {
 	caso, err := data.BuscarCaso()
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
@@ -18,6 +19,10 @@ func BuscarCaso (w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func ConferirCaso (w http.ResponseWriter, r *http.Request) {
+func ListarCasos(w http.ResponseWriter, r *http.Request) {
+	log.Printf("todo")
+}
+
+func ConferirCaso(w http.ResponseWriter, r *http.Request) {
 	log.Printf("todo")
 }
