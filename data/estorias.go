@@ -81,6 +81,7 @@ func ConferirEstoria(estoria []model.Estoria, id int64) bool {
 	estorias, err := BuscarEstoria(id)
 	if err != nil {
 		return false
+
 	}
 
 	if len(estorias) != len(estoria) {

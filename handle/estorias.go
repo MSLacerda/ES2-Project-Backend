@@ -68,8 +68,16 @@ func ConferirEstoria (w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
 	}
+	
+	type resposta struct {
+		Correto bool `json:"correto"`
+	}
 
-	err = JSON(w, 200, resp)
+	respostaApresentacao := resposta{}
+
+	respostaApresentacao.Correto = resp
+
+	err = JSON(w, 200, respostaApresentacao)
 	if err != nil {
 		log.Println(err)
 	}
