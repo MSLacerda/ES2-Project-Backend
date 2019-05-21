@@ -4,55 +4,24 @@
 
 ### Casos de uso
 
-- Listar casos de uso (por partes)
+- Buscar caso de uso
 
-Lista todos os dados dos casos de uso para a disposição do usuário a fim de montar possível resposta para o problema.
+Há apenas um caso de uso; Serão listados os conteúdos (atores, casos de uso, etc), já em ordem aleatória, para exibição para o usuário.
 
 ```http
 /api/casos GET
 ```
-Resposta:
+Resposta
 ```json
 {
-  "data": [
+  [
     {
-      "id": 1,
-      "grupo": 1,
-      "codigo_entidade": "A",
+      "codigo": 1,      
       "conteudo": "usuário"
     },
-    {
-      "id": 2,
-      "grupo": 1,
-      "codigo_entidade": "C",
-      "conteudo": "executa comando"
-    }
-  ]
-}
-```
-
-- Buscar caso de uso (por partes)
-
-Busca um caso específico (por partes)
-
-```http
-/api/casos/{grupo} GET
-```
-Resposta: O "grupo" significa que o conteúdo listado é um parte (caso de uso, ator, etc) do caso de uso 1 (se o grupo for 1).
-```json
-{
-  "data": [
-    {
-      "id": 1,
-      "grupo": 1,
-      "codigo_entidade": "A",
-      "conteudo": "usuário"
-    },
-    {
-      "id": 3,
-      "grupo": 1,
-      "codigo_entidade": "C",
-      "conteudo": "requisita comando"
+    {     
+      "codigo": 2,      
+      "conteudo": "Requisita comando"
     }
   ]
 }
@@ -60,18 +29,25 @@ Resposta: O "grupo" significa que o conteúdo listado é um parte (caso de uso, 
 
 - Conferir caso de uso
 
-Confere se o caso de uso resolvido pelo usuário está correto
+Para conferir se o caso de uso está correto o é esperado o seguinte: para exibição ao usuário de um lado há um imagem do documento de caso de uso com números no lugar dos conteúdos; do outro lado há a lista de conteúdos. É esperado que o usuário possa associar cada número da imagem a um conteúdo da lista. É esperado uma lista de códigos, o código do usuário ```codigo_usuario``` e o código correto ```codigo```
 
 ```http
-/api/casos/{grupo} PUT
+/api/casos PUT
 ```
-Corpo: todos os "conteúdos" (atores, casos de uso, extends) pertencentes a um mesmo caso de uso. No caso do "extends", a avaliação ocorre em pares de caso de uso em que **A** entends **B**
+
+Esperado
 ```json
 {
-  "grupo": 1,
-  "atores": [3, 4, 5],
-  "casos_de_uso": [6, 1, 2],
-  "extends": [6, 1]
+  [
+    {
+      "codigo" : 1,
+      "codigo_usuario": 2
+    },
+    {
+      "codigo" : 3,
+      "codigo_usuario": 3
+    }
+  ]
 }
 ```
 
