@@ -1,0 +1,12 @@
+{
+    "casos": [
+        {
+            "codigo": 1,
+            "conteudo": "Usuário"
+        },
+        {
+            "codigo":2,
+            "conteudo": "Solicita ajuda"
+        }
+    ]
+}

@@ -8,9 +8,8 @@ import (
 func GetRouter() *mux.Router {
 	public := mux.NewRouter()
 
-	public.HandleFunc("/api/casos", handle.ListarCasos).Methods("GET")
-	public.HandleFunc("/api/casos/{id:[0-9]+}", handle.BuscarCaso).Methods("GET")
-	public.HandleFunc("/api/casos/{id:[0-9]+}", handle.ConferirCaso).Methods("PUT")
+	public.HandleFunc("/api/casos", handle.BuscarCaso).Methods("GET")
+	public.HandleFunc("/api/casos", handle.ConferirCaso).Methods("PUT")
 
 	public.HandleFunc("/api/estorias", handle.ListarEstorias).Methods("GET")
 	public.HandleFunc("/api/estorias/{id:[0-9]+}", handle.BuscarEstoria).Methods("GET")

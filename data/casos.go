@@ -22,6 +22,8 @@ func BuscarCaso() ([]model.Caso, error) {
 		return casos.Casos, fmt.Errorf("Erro ao buscar dados dos casos")
 	}
 
+	log.Println(casos)
+
 	defer jsonFile.Close()
 
 	byteValue,_ := ioutil.ReadAll(jsonFile)
@@ -29,4 +31,15 @@ func BuscarCaso() ([]model.Caso, error) {
 	json.Unmarshal(byteValue, &casos)
 
 	return casos.Casos, nil
+}
+
+func ConferirCaso(casos []model.Caso) bool {
+
+	for _, c := range casos {
+		if c.Codigo != c.CodigoUsuario {
+			return false
+		}
+	}
+
+	return true
 }
