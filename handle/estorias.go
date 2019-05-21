@@ -15,7 +15,6 @@ import (
 )
 
 func ListarEstorias (w http.ResponseWriter, r *http.Request) {
-	log.Printf("1")
 	estorias, err := data.ListarEstorias()
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
