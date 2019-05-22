@@ -13,7 +13,7 @@ Há apenas um caso de uso; Serão listados os conteúdos (atores, casos de uso, 
 ```
 Resposta
 ```json
-{
+
   [
     {
       "codigo": 1,      
@@ -24,7 +24,7 @@ Resposta
       "conteudo": "Requisita comando"
     }
   ]
-}
+
 ```
 
 - Conferir caso de uso
@@ -37,7 +37,6 @@ Para conferir se o caso de uso está correto o é esperado o seguinte: para exib
 
 Esperado
 ```json
-{
   [
     {
       "codigo" : 1,
@@ -48,7 +47,6 @@ Esperado
       "codigo_usuario": 3
     }
   ]
-}
 ```
 
 Resposta
@@ -69,7 +67,7 @@ Lista todas as partes que vão compor uma estória de usuário (já embaralhadas
 ```
 Resposta
 ```json
-{
+
   [
     {
       "estoria": 1,
@@ -82,7 +80,7 @@ Resposta
       "conteudo": "instruções"
     }
   ]
-}
+
 ```
 
 - Conferir estoria de usuário
@@ -95,7 +93,7 @@ Confere uma estória de usuário. Para isso recebe uma lista das palavras da est
 
 Esperado
 ```json
-{
+
   [
     {
       "estoria": 1,
@@ -108,7 +106,7 @@ Esperado
       "conteudo": "instruções"
     }
   ]
-}
+
 ```
 
 Resposta
