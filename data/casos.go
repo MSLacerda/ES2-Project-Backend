@@ -30,3 +30,14 @@ func BuscarCaso() ([]model.Caso, error) {
 
 	return casos.Casos, nil
 }
+
+func ConferirCaso(casos []model.Caso) bool {
+
+	for _, c := range casos {
+		if c.Codigo != c.CodigoUsuario {
+			return false
+		}
+	}
+
+	return true
+}
