@@ -1,0 +1,36 @@
+{
+  "casos": [
+      {
+          "codigo": 1,
+          "conteudo": "Usuário"
+      },
+      {
+          "codigo":2,
+          "conteudo": "Abre Documento"
+      },
+      {
+          "codigo":3,
+          "conteudo": "Executa Processador"
+      },
+      {
+          "codigo":4,
+          "conteudo": "Salva Documentos"
+      },
+      {
+          "codigo":5,
+          "conteudo": "Requisita Ajuda"
+      },
+      {
+          "codigo":6,
+          "conteudo": "Executa Instrução"
+      },
+      {
+          "codigo":7,
+          "conteudo": "Atualiza Contador de Instrução"
+      },
+      {
+          "codigo":8,
+          "conteudo": "Processador"
+      }
+  ]
+}
